@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Crow or Raven</string>
+    <string name="start_game">Start</string>
 </resources>
