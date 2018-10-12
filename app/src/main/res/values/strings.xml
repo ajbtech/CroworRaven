@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Crow or Raven</string>
     <string name="start_game">Start</string>
+    <string name="name_A">Crow</string>
+    <string name="name_B">Raven</string>
+    <string name="caps_A">CROW</string>
+    <string name="caps_B">RAVEN</string>
+    <string name="correct">CORRECT</string>
+    <string name="wrong">WRONG</string>
 </resources>

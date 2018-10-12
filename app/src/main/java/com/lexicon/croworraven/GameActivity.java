@@ -26,12 +26,15 @@ public class GameActivity extends AppCompatActivity {
                 .setSwipeDecor(new SwipeDecor()
                         .setPaddingTop(20)
                         .setRelativeScale(0.01f)
-                        .setSwipeInMsgLayoutId(R.layout.bird_card_swipe_crow_correct)
-                        .setSwipeOutMsgLayoutId(R.layout.bird_card_swipe_crow_false));
+                        .setSwipeInMsgLayoutId(R.layout.bird_card_swipe_b)
+                        .setSwipeOutMsgLayoutId(R.layout.bird_card_swipe_a));
 
 
         for(Profile profile : Utils.loadProfiles(this.getApplicationContext())){
             mSwipeView.addView(new BirdCard(mContext, profile, mSwipeView));
+
+            //TODO Add the correct/incorrect label here
+            //mSwipeView.onRemoveView();
         }
 
         findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {
@@ -47,7 +50,5 @@ public class GameActivity extends AppCompatActivity {
                 mSwipeView.doSwipe(true);
             }
         });
-
-
     }
 }

@@ -15,16 +15,27 @@
             android:id="@+id/rejectBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/ic_launcher_foreground"/>
+            android:background="@drawable/crow"/>
         <ImageButton
             android:id="@+id/acceptBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/ic_launcher_foreground"/>
+            android:background="@drawable/raven"/>
     </LinearLayout>
     <com.mindorks.placeholderview.SwipePlaceHolderView
         android:id="@+id/swipeView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_margin="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_green_light"
+            android:text="@string/correct"/>
+    </com.mindorks.placeholderview.SwipePlaceHolderView>
 </FrameLayout>

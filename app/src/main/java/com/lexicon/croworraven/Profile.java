@@ -5,29 +5,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class Profile {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-
     @SerializedName("url")
     @Expose
     private String imageUrl;
 
-    @SerializedName("age")
+    @SerializedName("type")
     @Expose
-    private Integer age;
-
-    @SerializedName("location")
-    @Expose
-    private String location;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String type;
 
     public String getImageUrl() {
         return imageUrl;
@@ -37,19 +21,11 @@ public class Profile {
         this.imageUrl = imageUrl;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getType() {
+        return type;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
+    public void setType(String type) {
+        this.type = type;
     }
 }
