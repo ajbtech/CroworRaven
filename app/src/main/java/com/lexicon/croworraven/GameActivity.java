@@ -11,6 +11,11 @@ import com.mindorks.placeholderview.SwipePlaceHolderView;
 
 //TODO Load all images in the splash screen or start screen
 //TODO Add a score
+//TODO Randomize the list
+//TODO Add a replay button at the end
+//TODO Show the final score at the end
+//TODO Add a high score list
+//TODO Pretty up the splash screen
 
 public class GameActivity extends AppCompatActivity {
 
