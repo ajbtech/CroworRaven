@@ -10,17 +10,24 @@
 
     <style name="Correct">
         <item name="android:textColor">@android:color/holo_green_dark</item>
-        <item name="android:text">@string/correct</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="Wrong">
         <item name="android:textColor">@android:color/holo_red_dark</item>
-        <item name="android:text">@string/wrong</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="Invis">
         <item name="android:textColor">@android:color/holo_green_dark</item>
-        <item name="android:text"> </item>
+        <item name="android:textSize">1sp</item>
+    </style>
+
+    <style name="BirdText">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">40dp</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>

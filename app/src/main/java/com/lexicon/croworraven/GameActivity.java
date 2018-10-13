@@ -10,6 +10,7 @@ import com.mindorks.placeholderview.SwipeDecor;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
 
 //TODO Load all images in the splash screen or start screen
+//TODO Add a score
 
 public class GameActivity extends AppCompatActivity {
 
