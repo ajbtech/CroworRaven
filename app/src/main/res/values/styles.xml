@@ -8,28 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Base application theme. -->
     <style name="Correct">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:text">@string/correct</item>
     </style>
 
-    <!-- Base application theme. -->
     <style name="Wrong">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:text">@string/wrong</item>
     </style>
 
-    <!-- Base application theme. -->
     <style name="Invis">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:text"> </item>
     </style>
 
 </resources>

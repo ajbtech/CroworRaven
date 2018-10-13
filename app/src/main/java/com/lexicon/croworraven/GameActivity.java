@@ -4,14 +4,18 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.mindorks.placeholderview.SwipeDecor;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
+
+//TODO Load all images in the splash screen or start screen
 
 public class GameActivity extends AppCompatActivity {
 
     private SwipePlaceHolderView mSwipeView;
     private Context mContext;
+    private TextView textView_Correct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         mSwipeView = findViewById(R.id.swipeView);
+        textView_Correct = findViewById(R.id.textView_correct);
+
         mContext = getApplicationContext();
 
         mSwipeView.getBuilder()
@@ -31,10 +37,8 @@ public class GameActivity extends AppCompatActivity {
 
 
         for(Profile profile : Utils.loadProfiles(this.getApplicationContext())){
-            mSwipeView.addView(new BirdCard(mContext, profile, mSwipeView));
-
-            //TODO Add the correct/incorrect label here
-            //mSwipeView.onRemoveView();
+            final BirdCard myBirdCard = new BirdCard(mContext, profile, mSwipeView, textView_Correct);
+            mSwipeView.addView(myBirdCard);
         }
 
         findViewById(R.id.rejectBtn).setOnClickListener(new View.OnClickListener() {
